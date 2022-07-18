@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">practiceone</string>
+    <string name="bitcoinPrice">Bitcoin Price: $%d USD</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/jamesWebbFragment"
+        android:name="com.example.practiceone.JamesWebbFragment"
+        android:label="JamesWebbFragment"  >
+        <action
+            android:id="@+id/action_jamesWebbFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.practiceone.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_jamesWebbFragment"
+            app:destination="@id/jamesWebbFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_remoteFragment"
+            app:destination="@id/remoteFragment"
+            />
+        <action
+            android:id="@+id/action_mainFragment_to_bitcoinPriceFragment"
+            app:destination="@id/bitcoinPriceFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/remoteFragment"
+        android:name="com.example.practiceone.RemoteFragment"
+        android:label="RemoteFragment" />
+    <fragment
+        android:id="@+id/bitcoinPriceFragment"
+        android:name="com.example.practiceone.BitcoinPriceFragment"
+        android:label="BitcoinPriceFragment"
+        />
+</navigation>
